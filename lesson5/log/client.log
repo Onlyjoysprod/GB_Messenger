@@ -1,0 +1,3 @@
+INFO       2022-04-29 18:51:29,868 Connected to port: 7777
+INFO       2022-04-29 18:51:29,868 Send message to server: {'action': 'presence', 'time': 1651247489.8684545, 'user': {'account_name': 'Guest'}}
+INFO       2022-04-29 18:51:29,868 Server response: 200 : OK
