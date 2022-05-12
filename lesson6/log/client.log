@@ -1,0 +1,17 @@
+INFO       2022-04-29 18:51:29,868 Connected to port: 7777
+INFO       2022-04-29 18:51:29,868 Send message to server: {'action': 'presence', 'time': 1651247489.8684545, 'user': {'account_name': 'Guest'}}
+INFO       2022-04-29 18:51:29,868 Server response: 200 : OK
+INFO       2022-05-12 17:09:12,290 Connected to port: 7777
+INFO       2022-05-12 17:09:12,290 Send message to server: {'action': 'presence', 'time': 1652364552.2909296, 'user': {'account_name': 'Guest'}}
+INFO       2022-05-12 17:09:12,291 Server response: 200 : OK
+INFO       2022-05-12 17:15:25,809 Connected to port: 7777
+DEBUG      2022-05-12 17:15:25,818 Function create_presence was called from main
+DEBUG      2022-05-12 17:15:25,819 Function create_presence((), {}), return {'action': 'presence', 'time': 1652364925.8105197, 'user': {'account_name': 'Guest'}}
+INFO       2022-05-12 17:15:25,819 Send message to server: {'action': 'presence', 'time': 1652364925.8105197, 'user': {'account_name': 'Guest'}}
+DEBUG      2022-05-12 17:15:25,829 Function process_client_message was called from main
+DEBUG      2022-05-12 17:15:25,829 Function process_client_message(({'action': 'presence', 'time': 1652364925.8105197, 'user': {'account_name': 'Guest'}},), {}), return {'response': 200}
+DEBUG      2022-05-12 17:15:25,830 Function process_answer was called from main
+DEBUG      2022-05-12 17:15:25,830 Function process_answer(({'response': 200},), {}), return 200 : OK
+INFO       2022-05-12 17:15:25,830 Server response: 200 : OK
+DEBUG      2022-05-12 17:15:25,830 Function main was called from <module>
+DEBUG      2022-05-12 17:15:25,830 Function main((), {}), return None
