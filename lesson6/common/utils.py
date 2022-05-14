@@ -1,5 +1,8 @@
 import json
 from common.variables import MAX_PACKAGE_LENGTH, ENCODING
+from log.client_log_config import client_log
+from functools import wraps
+import inspect
 
 
 def decode_to_dict(byte_message):
@@ -35,3 +38,13 @@ def get_message(client):
 def send_message(sock, message):
     bpresence = encode_to_bytes(message)
     sock.send(bpresence)
+
+
+def log(func):
+    @wraps(func)
+    def call_info(*args, **kwargs):
+        res = func(*args, **kwargs)
+        client_log.debug(f'Function {func.__name__} was called from {inspect.stack()[1][3]}')
+        client_log.debug(f'Function {func.__name__}({args}, {kwargs}), return {res}')
+        return res
+    return call_info

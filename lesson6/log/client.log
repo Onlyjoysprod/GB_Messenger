@@ -15,3 +15,25 @@ DEBUG      2022-05-12 17:15:25,830 Function process_answer(({'response': 200},),
 INFO       2022-05-12 17:15:25,830 Server response: 200 : OK
 DEBUG      2022-05-12 17:15:25,830 Function main was called from <module>
 DEBUG      2022-05-12 17:15:25,830 Function main((), {}), return None
+INFO       2022-05-14 10:03:42,298 Connected to port: 7777
+DEBUG      2022-05-14 10:03:42,306 Function create_presence was called from main
+DEBUG      2022-05-14 10:03:42,306 Function create_presence((), {}), return {'action': 'presence', 'time': 1652511822.2985587, 'user': {'account_name': 'Guest'}}
+INFO       2022-05-14 10:03:42,306 Send message to server: {'action': 'presence', 'time': 1652511822.2985587, 'user': {'account_name': 'Guest'}}
+DEBUG      2022-05-14 10:03:42,316 Function process_client_message was called from main
+DEBUG      2022-05-14 10:03:42,316 Function process_client_message(({'action': 'presence', 'time': 1652511822.2985587, 'user': {'account_name': 'Guest'}},), {}), return {'response': 200}
+DEBUG      2022-05-14 10:03:42,317 Function process_answer was called from main
+DEBUG      2022-05-14 10:03:42,317 Function process_answer(({'response': 200},), {}), return 200 : OK
+INFO       2022-05-14 10:03:42,317 Server response: 200 : OK
+DEBUG      2022-05-14 10:03:42,317 Function main was called from <module>
+DEBUG      2022-05-14 10:03:42,317 Function main((), {}), return None
+INFO       2022-05-14 10:04:23,767 Connected to port: 7777
+DEBUG      2022-05-14 10:04:23,775 Function create_presence was called from main
+DEBUG      2022-05-14 10:04:23,775 Function create_presence((), {}), return {'action': 'presence', 'time': 1652511863.7674408, 'user': {'account_name': 'Guest'}}
+INFO       2022-05-14 10:04:23,775 Send message to server: {'action': 'presence', 'time': 1652511863.7674408, 'user': {'account_name': 'Guest'}}
+DEBUG      2022-05-14 10:04:23,785 Function process_client_message was called from main
+DEBUG      2022-05-14 10:04:23,785 Function process_client_message(({'action': 'presence', 'time': 1652511863.7674408, 'user': {'account_name': 'Guest'}},), {}), return {'response': 200}
+DEBUG      2022-05-14 10:04:23,786 Function process_answer was called from main
+DEBUG      2022-05-14 10:04:23,786 Function process_answer(({'response': 200},), {}), return 200 : OK
+INFO       2022-05-14 10:04:23,786 Server response: 200 : OK
+DEBUG      2022-05-14 10:04:23,786 Function main was called from <module>
+DEBUG      2022-05-14 10:04:23,786 Function main((), {}), return None
