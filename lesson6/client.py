@@ -4,8 +4,9 @@ from socket import socket, AF_INET, SOCK_STREAM
 
 from common.variables import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, RESPONSE, ERROR, \
     DEFAULT_IP_ADDRESS, DEFAULT_PORT
-from common.utils import get_message, send_message, log
+from common.utils import get_message, send_message
 from log.client_log_config import client_log
+from decorator import log
 
 parser = argparse.ArgumentParser(description='address and port')
 parser.add_argument('-a', dest="addr", default=DEFAULT_IP_ADDRESS)

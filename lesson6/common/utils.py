@@ -1,10 +1,9 @@
 import json
 from common.variables import MAX_PACKAGE_LENGTH, ENCODING
-from log.client_log_config import client_log
-from functools import wraps
-import inspect
+from decorator import log
 
 
+@log
 def decode_to_dict(byte_message):
     try:
         if isinstance(byte_message, bytes):
@@ -17,6 +16,7 @@ def decode_to_dict(byte_message):
         print('Неверный тип данных')
 
 
+@log
 def encode_to_bytes(dict_message):
     try:
         if isinstance(dict_message, dict):
@@ -29,22 +29,16 @@ def encode_to_bytes(dict_message):
         print('Неверный тип данных')
 
 
+@log
 def get_message(client):
     bresponse = client.recv(MAX_PACKAGE_LENGTH)
     response = decode_to_dict(bresponse)
     return response
 
 
+@log
 def send_message(sock, message):
     bpresence = encode_to_bytes(message)
     sock.send(bpresence)
 
 
-def log(func):
-    @wraps(func)
-    def call_info(*args, **kwargs):
-        res = func(*args, **kwargs)
-        client_log.debug(f'Function {func.__name__} was called from {inspect.stack()[1][3]}')
-        client_log.debug(f'Function {func.__name__}({args}, {kwargs}), return {res}')
-        return res
-    return call_info
