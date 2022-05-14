@@ -1,0 +1,6 @@
+INFO       2022-05-14 10:03:42,298 Connected client: ('127.0.0.1', 49944)
+INFO       2022-05-14 10:03:42,306 Get message from client: {'action': 'presence', 'time': 1652511822.2985587, 'user': {'account_name': 'Guest'}}
+INFO       2022-05-14 10:03:42,316 Send response to client: {'response': 200}
+INFO       2022-05-14 10:04:23,767 Connected client: ('127.0.0.1', 50000)
+INFO       2022-05-14 10:04:23,775 Get message from client: {'action': 'presence', 'time': 1652511863.7674408, 'user': {'account_name': 'Guest'}}
+INFO       2022-05-14 10:04:23,785 Send response to client: {'response': 200}

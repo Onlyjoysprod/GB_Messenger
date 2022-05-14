@@ -1,0 +1,3 @@
+INFO       2022-04-29 18:51:29,868 Connected client: ('127.0.0.1', 57995)
+INFO       2022-04-29 18:51:29,868 Get message from client: {'action': 'presence', 'time': 1651247489.8684545, 'user': {'account_name': 'Guest'}}
+INFO       2022-04-29 18:51:29,868 Send response to client: {'response': 200}
