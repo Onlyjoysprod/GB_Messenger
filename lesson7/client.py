@@ -11,6 +11,7 @@ from decorator import log
 parser = argparse.ArgumentParser(description='address and port')
 parser.add_argument('-a', dest="addr", default=DEFAULT_IP_ADDRESS)
 parser.add_argument('-p', dest="port", default=DEFAULT_PORT)
+parser.add_argument('-m', dest="mode", default='r')
 args = parser.parse_args()
 
 
@@ -37,6 +38,20 @@ def process_answer(message):
     raise ValueError
 
 
+def read_messages(client):
+    while True:
+        message = get_message(client)
+        client_log.debug(f'Get message: {message}')
+        print(message)
+
+
+def write_messages(client):
+    while True:
+        message = create_presence()
+        client_log.debug("Sending message...")
+        send_message(client, message)
+
+
 @log
 def main():
     try:
@@ -44,6 +59,14 @@ def main():
         server_port = int(args.port)
         if server_port < 1024 or server_port > 65535:
             client_log.error('Port can be in range 1024-6535')
+            raise ValueError
+    except ValueError:
+        sys.exit(1)
+
+    try:
+        mode = args.mode
+        if not mode == 'r' or mode == 's':
+            client_log.error('Wrong mode (can be r or s)')
             raise ValueError
     except ValueError:
         sys.exit(1)
@@ -59,6 +82,11 @@ def main():
         answer = process_answer(get_message(transport))
         client_log.info(f'Server response: {answer}')
         print(answer)
+        if answer == '200 : OK':
+            if mode == 'r':
+                read_messages(transport)
+            elif mode == 's':
+                write_messages(transport)
     except(ValueError, json.JSONDecodeError):
         client_log.warning('Can not decode message')
 
