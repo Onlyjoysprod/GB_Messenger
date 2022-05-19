@@ -1,0 +1,57 @@
+INFO       2022-05-14 10:03:42,298 Connected client: ('127.0.0.1', 49944)
+INFO       2022-05-14 10:03:42,306 Get message from client: {'action': 'presence', 'time': 1652511822.2985587, 'user': {'account_name': 'Guest'}}
+INFO       2022-05-14 10:03:42,316 Send response to client: {'response': 200}
+INFO       2022-05-14 10:04:23,767 Connected client: ('127.0.0.1', 50000)
+INFO       2022-05-14 10:04:23,775 Get message from client: {'action': 'presence', 'time': 1652511863.7674408, 'user': {'account_name': 'Guest'}}
+INFO       2022-05-14 10:04:23,785 Send response to client: {'response': 200}
+INFO       2022-05-14 19:48:07,707 Connected client: ('127.0.0.1', 58465)
+INFO       2022-05-14 19:48:07,727 Get message from client: {'action': 'presence', 'time': 1652546887.7070298, 'user': {'account_name': 'Guest'}}
+INFO       2022-05-14 19:48:07,729 Send response to client: {'response': 200}
+INFO       2022-05-14 21:02:32,317 Connected client: ('127.0.0.1', 50292)
+INFO       2022-05-14 21:02:32,336 Get message from client: {'action': 'presence', 'time': 1652551352.3170004, 'user': {'account_name': 'Guest'}}
+INFO       2022-05-14 21:02:32,338 Send response to client: {'response': 200}
+INFO       2022-05-14 21:06:00,691 Connected client: ('127.0.0.1', 58962)
+INFO       2022-05-14 21:06:00,710 Get message from client: {'action': 'presence', 'time': 1652551560.6912951, 'user': {'account_name': 'Guest'}}
+INFO       2022-05-14 21:06:00,711 Send response to client: {'response': 200}
+INFO       2022-05-14 21:06:39,194 Connected client: ('127.0.0.1', 58992)
+INFO       2022-05-14 21:06:39,213 Get message from client: {'action': 'presence', 'time': 1652551599.1943657, 'user': {'account_name': 'Guest'}}
+INFO       2022-05-14 21:06:39,214 Send response to client: {'response': 200}
+INFO       2022-05-14 21:07:32,869 Connected client: ('127.0.0.1', 59032)
+INFO       2022-05-14 21:07:32,887 Get message from client: {'action': 'presence', 'time': 1652551652.8691802, 'user': {'account_name': 'Guest'}}
+INFO       2022-05-14 21:07:32,888 Send response to client: {'response': 200}
+INFO       2022-05-14 21:07:54,793 Connected client: ('127.0.0.1', 59053)
+INFO       2022-05-14 21:07:54,814 Get message from client: {'action': 'presence', 'time': 1652551674.7935727, 'user': {'account_name': 'Guest'}}
+INFO       2022-05-14 21:07:54,815 Send response to client: {'response': 200}
+INFO       2022-05-14 21:19:11,306 Connected client: ('127.0.0.1', 59516)
+INFO       2022-05-14 21:20:38,696 Connected client: ('127.0.0.1', 59576)
+INFO       2022-05-14 21:20:42,544 Connected client: ('127.0.0.1', 59579)
+INFO       2022-05-14 21:20:54,308 Connected client: ('127.0.0.1', 59584)
+INFO       2022-05-14 21:21:34,093 Connected client: ('127.0.0.1', 59633)
+INFO       2022-05-14 21:21:57,722 Connected client: ('127.0.0.1', 59658)
+INFO       2022-05-14 21:22:07,879 Connected client: ('127.0.0.1', 59663)
+INFO       2022-05-14 21:24:42,474 Connected client: ('127.0.0.1', 59788)
+INFO       2022-05-14 21:24:44,917 Connected client: ('127.0.0.1', 59796)
+INFO       2022-05-14 21:24:48,296 Connected client: ('127.0.0.1', 59800)
+INFO       2022-05-19 12:32:53,315 Connected client: ('127.0.0.1', 49191)
+INFO       2022-05-19 12:34:05,188 Connected client: ('127.0.0.1', 49305)
+INFO       2022-05-19 12:34:11,853 Connected client: ('127.0.0.1', 49311)
+INFO       2022-05-19 12:34:23,821 Connected client: ('127.0.0.1', 49322)
+INFO       2022-05-19 12:36:52,471 Connected client: ('127.0.0.1', 49466)
+INFO       2022-05-19 12:37:25,510 Connected client: ('127.0.0.1', 49508)
+INFO       2022-05-19 12:37:42,158 Connected client: ('127.0.0.1', 49522)
+INFO       2022-05-19 13:07:41,447 Connected client: ('127.0.0.1', 51099)
+INFO       2022-05-19 13:08:26,193 Connected client: ('127.0.0.1', 51174)
+INFO       2022-05-19 13:20:28,500 Connected with ('127.0.0.1', 51638)
+INFO       2022-05-19 13:20:29,022 Client ('127.0.0.1', 51638) was disconnected.
+INFO       2022-05-19 13:25:55,034 Connected with ('127.0.0.1', 51893)
+DEBUG      2022-05-19 13:25:55,550 Разбор сообщения от клиента : {'action': 'presence', 'time': 1652955955.0348337, 'user': {'account_name': 'Joy'}}
+DEBUG      2022-05-19 13:26:13,778 Разбор сообщения от клиента : {'action': 'message', 'from': 'Joy', 'to': 'Guest', 'time': 1652955973.579211, 'mess_text': 'lala'}
+ERROR      2022-05-19 13:26:13,779 User Guest not registered, cant send message to wrong user.
+INFO       2022-05-19 13:26:20,185 Connected with ('127.0.0.1', 51913)
+DEBUG      2022-05-19 13:26:20,692 Разбор сообщения от клиента : {'action': 'presence', 'time': 1652955980.1851923, 'user': {'account_name': 'Guest'}}
+DEBUG      2022-05-19 13:26:30,334 Разбор сообщения от клиента : {'action': 'message', 'from': 'Guest', 'to': 'Joy', 'time': 1652955990.1995409, 'mess_text': 'hi'}
+INFO       2022-05-19 13:26:30,336 Send message to user Joy from Guest.
+DEBUG      2022-05-19 13:26:52,122 Разбор сообщения от клиента : {'action': 'message', 'from': 'Joy', 'to': 'lala', 'time': 1652956011.903471, 'mess_text': 'fd'}
+ERROR      2022-05-19 13:26:52,122 User lala not registered, cant send message to wrong user.
+DEBUG      2022-05-19 13:27:04,798 Разбор сообщения от клиента : {'action': 'message', 'from': 'Joy', 'to': 'Guest', 'time': 1652956024.3302116, 'mess_text': 'lololo'}
+INFO       2022-05-19 13:27:04,799 Send message to user Guest from Joy.
