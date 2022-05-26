@@ -3145,3 +3145,55 @@ DEBUG      2022-05-19 13:27:04,800 Function get_message was called from read_mes
 DEBUG      2022-05-19 13:27:04,800 Function get_message((<socket.socket fd=452, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51913), raddr=('127.0.0.1', 7777)>,), {}), return {'action': 'message', 'from': 'Joy', 'to': 'Guest', 'time': 1652956024.3302116, 'mess_text': 'lololo'}
 INFO       2022-05-19 13:27:04,800 Message from user Joy:
 lololo
+INFO       2022-05-26 09:35:59,272 Run client. Address: 127.0.0.1, port: 7777, user name: Joy
+INFO       2022-05-26 09:35:59,273 Connected to port: 7777
+DEBUG      2022-05-26 09:35:59,283 Function create_presence was called from main
+DEBUG      2022-05-26 09:35:59,283 Function create_presence(('Joy',), {}), return {'action': 'presence', 'time': 1653546959.2739184, 'user': {'account_name': 'Joy'}}
+DEBUG      2022-05-26 09:35:59,283 Function encode_to_bytes was called from send_message
+DEBUG      2022-05-26 09:35:59,284 Function encode_to_bytes(({'action': 'presence', 'time': 1653546959.2739184, 'user': {'account_name': 'Joy'}},), {}), return b'{"action": "presence", "time": 1653546959.2739184, "user": {"account_name": "Joy"}}'
+DEBUG      2022-05-26 09:35:59,284 Function send_message was called from main
+DEBUG      2022-05-26 09:35:59,284 Function send_message((<socket.socket fd=504, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63417), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653546959.2739184, 'user': {'account_name': 'Joy'}}), {}), return None
+INFO       2022-05-26 09:35:59,284 Send message to server: {'action': 'presence', 'time': 1653546959.2739184, 'user': {'account_name': 'Joy'}}
+DEBUG      2022-05-26 09:35:59,791 Function decode_to_dict was called from get_message
+DEBUG      2022-05-26 09:35:59,791 Function decode_to_dict((b'{"action": "presence", "time": 1653546959.2739184, "user": {"account_name": "Joy"}}',), {}), return {'action': 'presence', 'time': 1653546959.2739184, 'user': {'account_name': 'Joy'}}
+DEBUG      2022-05-26 09:35:59,792 Function get_message was called from main
+DEBUG      2022-05-26 09:35:59,792 Function get_message((<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63417)>,), {}), return {'action': 'presence', 'time': 1653546959.2739184, 'user': {'account_name': 'Joy'}}
+DEBUG      2022-05-26 09:35:59,792 Function encode_to_bytes was called from send_message
+DEBUG      2022-05-26 09:35:59,792 Function encode_to_bytes(({'response': 200},), {}), return b'{"response": 200}'
+DEBUG      2022-05-26 09:35:59,793 Function send_message was called from process_client_message
+DEBUG      2022-05-26 09:35:59,793 Function send_message((<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63417)>, {'response': 200}), {}), return None
+DEBUG      2022-05-26 09:35:59,793 Function decode_to_dict was called from get_message
+DEBUG      2022-05-26 09:35:59,793 Function decode_to_dict((b'{"response": 200}',), {}), return {'response': 200}
+DEBUG      2022-05-26 09:35:59,793 Function process_client_message was called from main
+DEBUG      2022-05-26 09:35:59,793 Function process_client_message(({'action': 'presence', 'time': 1653546959.2739184, 'user': {'account_name': 'Joy'}}, [], <socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63417)>, [<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63417)>], {'Joy': <socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63417)>}), {}), return None
+DEBUG      2022-05-26 09:35:59,793 Function get_message was called from main
+DEBUG      2022-05-26 09:35:59,794 Function get_message((<socket.socket fd=504, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63417), raddr=('127.0.0.1', 7777)>,), {}), return {'response': 200}
+DEBUG      2022-05-26 09:35:59,795 Function process_answer was called from main
+DEBUG      2022-05-26 09:35:59,795 Function process_answer(({'response': 200},), {}), return 200 : OK
+INFO       2022-05-26 09:35:59,795 Server response: 200 : OK
+INFO       2022-05-26 09:35:59,798 Run threads
+DEBUG      2022-05-26 09:36:10,735 Function encode_to_bytes was called from send_message
+DEBUG      2022-05-26 09:36:10,735 Function encode_to_bytes(({'action': 'message', 'from': 'Joy', 'to': 'Joy', 'time': 1653546970.7272046, 'mess_text': '213'},), {}), return b'{"action": "message", "from": "Joy", "to": "Joy", "time": 1653546970.7272046, "mess_text": "213"}'
+DEBUG      2022-05-26 09:36:10,735 Function send_message was called from create_message
+DEBUG      2022-05-26 09:36:10,735 Function send_message((<socket.socket fd=504, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63417), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'Joy', 'to': 'Joy', 'time': 1653546970.7272046, 'mess_text': '213'}), {}), return None
+INFO       2022-05-26 09:36:10,735 Sending message to user Joy
+DEBUG      2022-05-26 09:36:10,736 Function create_message was called from send_messages
+DEBUG      2022-05-26 09:36:10,736 Function create_message((<socket.socket fd=504, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63417), raddr=('127.0.0.1', 7777)>, 'Joy'), {}), return None
+DEBUG      2022-05-26 09:36:10,966 Function decode_to_dict was called from get_message
+DEBUG      2022-05-26 09:36:10,966 Function decode_to_dict((b'{"action": "message", "from": "Joy", "to": "Joy", "time": 1653546970.7272046, "mess_text": "213"}',), {}), return {'action': 'message', 'from': 'Joy', 'to': 'Joy', 'time': 1653546970.7272046, 'mess_text': '213'}
+DEBUG      2022-05-26 09:36:10,967 Function get_message was called from main
+DEBUG      2022-05-26 09:36:10,967 Function get_message((<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63417)>,), {}), return {'action': 'message', 'from': 'Joy', 'to': 'Joy', 'time': 1653546970.7272046, 'mess_text': '213'}
+DEBUG      2022-05-26 09:36:10,967 Function process_client_message was called from main
+DEBUG      2022-05-26 09:36:10,967 Function process_client_message(({'action': 'message', 'from': 'Joy', 'to': 'Joy', 'time': 1653546970.7272046, 'mess_text': '213'}, [{'action': 'message', 'from': 'Joy', 'to': 'Joy', 'time': 1653546970.7272046, 'mess_text': '213'}], <socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63417)>, [<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63417)>], {'Joy': <socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63417)>}), {}), return None
+DEBUG      2022-05-26 09:36:10,968 Function encode_to_bytes was called from send_message
+DEBUG      2022-05-26 09:36:10,968 Function encode_to_bytes(({'action': 'message', 'from': 'Joy', 'to': 'Joy', 'time': 1653546970.7272046, 'mess_text': '213'},), {}), return b'{"action": "message", "from": "Joy", "to": "Joy", "time": 1653546970.7272046, "mess_text": "213"}'
+DEBUG      2022-05-26 09:36:10,969 Function decode_to_dict was called from get_message
+
+DEBUG      2022-05-26 09:36:10,969 Function send_message((<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63417)>, {'action': 'message', 'from': 'Joy', 'to': 'Joy', 'time': 1653546970.7272046, 'mess_text': '213'}), {}), return None
+DEBUG      2022-05-26 09:36:10,969 Function decode_to_dict((b'{"action": "message", "from": "Joy", "to": "Joy", "time": 1653546970.7272046, "mess_text": "213"}',), {}), return {'action': 'message', 'from': 'Joy', 'to': 'Joy', 'time': 1653546970.7272046, 'mess_text': '213'}
+DEBUG      2022-05-26 09:36:10,969 Function process_message was called from main
+DEBUG      2022-05-26 09:36:10,970 Function get_message was called from read_messages
+DEBUG      2022-05-26 09:36:10,970 Function process_message(({'action': 'message', 'from': 'Joy', 'to': 'Joy', 'time': 1653546970.7272046, 'mess_text': '213'}, {'Joy': <socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63417)>}, [<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63417)>]), {}), return None
+DEBUG      2022-05-26 09:36:10,970 Function get_message((<socket.socket fd=504, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63417), raddr=('127.0.0.1', 7777)>,), {}), return {'action': 'message', 'from': 'Joy', 'to': 'Joy', 'time': 1653546970.7272046, 'mess_text': '213'}
+INFO       2022-05-26 09:36:10,970 Message from user Joy:
+213

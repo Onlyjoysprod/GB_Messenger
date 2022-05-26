@@ -55,3 +55,7 @@ DEBUG      2022-05-19 13:26:52,122 Разбор сообщения от клие
 ERROR      2022-05-19 13:26:52,122 User lala not registered, cant send message to wrong user.
 DEBUG      2022-05-19 13:27:04,798 Разбор сообщения от клиента : {'action': 'message', 'from': 'Joy', 'to': 'Guest', 'time': 1652956024.3302116, 'mess_text': 'lololo'}
 INFO       2022-05-19 13:27:04,799 Send message to user Guest from Joy.
+INFO       2022-05-26 09:35:59,273 Connected with ('127.0.0.1', 63417)
+DEBUG      2022-05-26 09:35:59,792 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653546959.2739184, 'user': {'account_name': 'Joy'}}
+DEBUG      2022-05-26 09:36:10,967 Разбор сообщения от клиента : {'action': 'message', 'from': 'Joy', 'to': 'Joy', 'time': 1653546970.7272046, 'mess_text': '213'}
+INFO       2022-05-26 09:36:10,969 Send message to user Joy from Joy.
