@@ -2,13 +2,13 @@ import dis
 
 
 class ServerVerifier(type):
-    def __init__(cls, cls_ame, bases, cls_dict):
+    def __init__(cls, clsname, bases, clsdict):
         methods = []
         attrs = []
 
-        for func in cls_dict:
+        for func in clsdict:
             try:
-                ret = dis.get_instructions(cls_dict[func])
+                ret = dis.get_instructions(clsdict[func])
             except TypeError:
                 pass
             else:
@@ -26,15 +26,15 @@ class ServerVerifier(type):
 
         if not ('SOCK_STREAM' in attrs and 'AF_INET' in attrs):
             raise TypeError('Incorrect socket.')
-        super().__init__(cls_ame, bases, cls_dict)
+        super().__init__(clsname, bases, clsdict)
 
 
 class ClientVerifier(type):
-    def __init__(cls, cls_name, bases, cls_dict):
+    def __init__(cls, clsname, bases, clsdict):
         methods = []
-        for func in cls_dict:
+        for func in clsdict:
             try:
-                ret = dis.get_instructions(cls_dict[func])
+                ret = dis.get_instructions(clsdict[func])
             except TypeError:
                 pass
             else:
@@ -46,5 +46,5 @@ class ClientVerifier(type):
         for command in ('accept', 'listen', 'socket'):
             if command in methods:
                 raise TypeError('Wrong method!')
-        super().__init__(cls_name, bases, cls_dict)
+        super().__init__(clsname, bases, clsdict)
 
