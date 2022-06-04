@@ -1,0 +1,209 @@
+INFO       2022-05-14 10:03:42,298 Connected client: ('127.0.0.1', 49944)
+INFO       2022-05-14 10:03:42,306 Get message from client: {'action': 'presence', 'time': 1652511822.2985587, 'user': {'account_name': 'Guest'}}
+INFO       2022-05-14 10:03:42,316 Send response to client: {'response': 200}
+INFO       2022-05-14 10:04:23,767 Connected client: ('127.0.0.1', 50000)
+INFO       2022-05-14 10:04:23,775 Get message from client: {'action': 'presence', 'time': 1652511863.7674408, 'user': {'account_name': 'Guest'}}
+INFO       2022-05-14 10:04:23,785 Send response to client: {'response': 200}
+INFO       2022-05-14 19:48:07,707 Connected client: ('127.0.0.1', 58465)
+INFO       2022-05-14 19:48:07,727 Get message from client: {'action': 'presence', 'time': 1652546887.7070298, 'user': {'account_name': 'Guest'}}
+INFO       2022-05-14 19:48:07,729 Send response to client: {'response': 200}
+INFO       2022-05-14 21:02:32,317 Connected client: ('127.0.0.1', 50292)
+INFO       2022-05-14 21:02:32,336 Get message from client: {'action': 'presence', 'time': 1652551352.3170004, 'user': {'account_name': 'Guest'}}
+INFO       2022-05-14 21:02:32,338 Send response to client: {'response': 200}
+INFO       2022-05-14 21:06:00,691 Connected client: ('127.0.0.1', 58962)
+INFO       2022-05-14 21:06:00,710 Get message from client: {'action': 'presence', 'time': 1652551560.6912951, 'user': {'account_name': 'Guest'}}
+INFO       2022-05-14 21:06:00,711 Send response to client: {'response': 200}
+INFO       2022-05-14 21:06:39,194 Connected client: ('127.0.0.1', 58992)
+INFO       2022-05-14 21:06:39,213 Get message from client: {'action': 'presence', 'time': 1652551599.1943657, 'user': {'account_name': 'Guest'}}
+INFO       2022-05-14 21:06:39,214 Send response to client: {'response': 200}
+INFO       2022-05-14 21:07:32,869 Connected client: ('127.0.0.1', 59032)
+INFO       2022-05-14 21:07:32,887 Get message from client: {'action': 'presence', 'time': 1652551652.8691802, 'user': {'account_name': 'Guest'}}
+INFO       2022-05-14 21:07:32,888 Send response to client: {'response': 200}
+INFO       2022-05-14 21:07:54,793 Connected client: ('127.0.0.1', 59053)
+INFO       2022-05-14 21:07:54,814 Get message from client: {'action': 'presence', 'time': 1652551674.7935727, 'user': {'account_name': 'Guest'}}
+INFO       2022-05-14 21:07:54,815 Send response to client: {'response': 200}
+INFO       2022-05-14 21:19:11,306 Connected client: ('127.0.0.1', 59516)
+INFO       2022-05-14 21:20:38,696 Connected client: ('127.0.0.1', 59576)
+INFO       2022-05-14 21:20:42,544 Connected client: ('127.0.0.1', 59579)
+INFO       2022-05-14 21:20:54,308 Connected client: ('127.0.0.1', 59584)
+INFO       2022-05-14 21:21:34,093 Connected client: ('127.0.0.1', 59633)
+INFO       2022-05-14 21:21:57,722 Connected client: ('127.0.0.1', 59658)
+INFO       2022-05-14 21:22:07,879 Connected client: ('127.0.0.1', 59663)
+INFO       2022-05-14 21:24:42,474 Connected client: ('127.0.0.1', 59788)
+INFO       2022-05-14 21:24:44,917 Connected client: ('127.0.0.1', 59796)
+INFO       2022-05-14 21:24:48,296 Connected client: ('127.0.0.1', 59800)
+INFO       2022-05-19 12:32:53,315 Connected client: ('127.0.0.1', 49191)
+INFO       2022-05-19 12:34:05,188 Connected client: ('127.0.0.1', 49305)
+INFO       2022-05-19 12:34:11,853 Connected client: ('127.0.0.1', 49311)
+INFO       2022-05-19 12:34:23,821 Connected client: ('127.0.0.1', 49322)
+INFO       2022-05-19 12:36:52,471 Connected client: ('127.0.0.1', 49466)
+INFO       2022-05-19 12:37:25,510 Connected client: ('127.0.0.1', 49508)
+INFO       2022-05-19 12:37:42,158 Connected client: ('127.0.0.1', 49522)
+INFO       2022-05-19 13:07:41,447 Connected client: ('127.0.0.1', 51099)
+INFO       2022-05-19 13:08:26,193 Connected client: ('127.0.0.1', 51174)
+INFO       2022-05-19 13:20:28,500 Connected with ('127.0.0.1', 51638)
+INFO       2022-05-19 13:20:29,022 Client ('127.0.0.1', 51638) was disconnected.
+INFO       2022-05-19 13:25:55,034 Connected with ('127.0.0.1', 51893)
+DEBUG      2022-05-19 13:25:55,550 Разбор сообщения от клиента : {'action': 'presence', 'time': 1652955955.0348337, 'user': {'account_name': 'Joy'}}
+DEBUG      2022-05-19 13:26:13,778 Разбор сообщения от клиента : {'action': 'message', 'from': 'Joy', 'to': 'Guest', 'time': 1652955973.579211, 'mess_text': 'lala'}
+ERROR      2022-05-19 13:26:13,779 User Guest not registered, cant send message to wrong user.
+INFO       2022-05-19 13:26:20,185 Connected with ('127.0.0.1', 51913)
+DEBUG      2022-05-19 13:26:20,692 Разбор сообщения от клиента : {'action': 'presence', 'time': 1652955980.1851923, 'user': {'account_name': 'Guest'}}
+DEBUG      2022-05-19 13:26:30,334 Разбор сообщения от клиента : {'action': 'message', 'from': 'Guest', 'to': 'Joy', 'time': 1652955990.1995409, 'mess_text': 'hi'}
+INFO       2022-05-19 13:26:30,336 Send message to user Joy from Guest.
+DEBUG      2022-05-19 13:26:52,122 Разбор сообщения от клиента : {'action': 'message', 'from': 'Joy', 'to': 'lala', 'time': 1652956011.903471, 'mess_text': 'fd'}
+ERROR      2022-05-19 13:26:52,122 User lala not registered, cant send message to wrong user.
+DEBUG      2022-05-19 13:27:04,798 Разбор сообщения от клиента : {'action': 'message', 'from': 'Joy', 'to': 'Guest', 'time': 1652956024.3302116, 'mess_text': 'lololo'}
+INFO       2022-05-19 13:27:04,799 Send message to user Guest from Joy.
+INFO       2022-05-26 09:35:59,273 Connected with ('127.0.0.1', 63417)
+DEBUG      2022-05-26 09:35:59,792 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653546959.2739184, 'user': {'account_name': 'Joy'}}
+DEBUG      2022-05-26 09:36:10,967 Разбор сообщения от клиента : {'action': 'message', 'from': 'Joy', 'to': 'Joy', 'time': 1653546970.7272046, 'mess_text': '213'}
+INFO       2022-05-26 09:36:10,969 Send message to user Joy from Joy.
+INFO       2022-05-26 10:08:30,478 Connected with ('127.0.0.1', 52795)
+DEBUG      2022-05-26 10:08:31,003 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653548910.4786634, 'user': {'account_name': 'Joy'}}
+DEBUG      2022-05-26 10:08:37,573 Разбор сообщения от клиента : {'action': 'message', 'from': 'Joy', 'to': 'Joy', 'time': 1653548917.4664984, 'mess_text': '1234'}
+INFO       2022-05-26 10:08:37,576 Send message to user Joy from Joy.
+INFO       2022-05-26 17:00:11,717 Connected with ('127.0.0.1', 63427)
+INFO       2022-05-26 17:00:11,718 Connected with ('127.0.0.1', 63428)
+INFO       2022-05-26 17:00:11,722 Connected with ('127.0.0.1', 63429)
+INFO       2022-05-26 17:00:11,723 Connected with ('127.0.0.1', 63430)
+INFO       2022-05-26 17:00:12,209 Connected with ('127.0.0.1', 63426)
+DEBUG      2022-05-26 17:00:12,221 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653573611.7175722, 'user': {'account_name': 'test3'}}
+DEBUG      2022-05-26 17:00:12,224 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653573611.7185729, 'user': {'account_name': 'test1'}}
+DEBUG      2022-05-26 17:00:12,227 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653573611.7225623, 'user': {'account_name': 'test5'}}
+DEBUG      2022-05-26 17:00:12,230 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653573611.7235591, 'user': {'account_name': 'test4'}}
+DEBUG      2022-05-26 17:00:12,744 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653573612.2095973, 'user': {'account_name': 'test2'}}
+DEBUG      2022-05-26 17:00:49,355 Разбор сообщения от клиента : {'action': 'message', 'from': 'test2', 'to': 'test0', 'time': 1653573649.00187, 'mess_text': 'fdfsd'}
+ERROR      2022-05-26 17:00:49,355 User test0 not registered, cant send message to wrong user.
+DEBUG      2022-05-26 17:01:06,115 Разбор сообщения от клиента : {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1653573665.868917, 'mess_text': 'sdfs'}
+INFO       2022-05-26 17:01:06,117 Send message to user test1 from test2.
+INFO       2022-05-26 17:01:42,847 Connected with ('127.0.0.1', 63553)
+DEBUG      2022-05-26 17:01:43,365 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653573702.8473794, 'user': {'account_name': 'Joy'}}
+INFO       2022-05-26 17:03:46,080 Connected with ('127.0.0.1', 63616)
+INFO       2022-05-26 17:03:46,567 Connected with ('127.0.0.1', 63615)
+DEBUG      2022-05-26 17:03:46,579 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653573826.0807178, 'user': {'account_name': 'test3'}}
+INFO       2022-05-26 17:03:46,580 Connected with ('127.0.0.1', 63614)
+DEBUG      2022-05-26 17:03:46,582 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653573826.5676289, 'user': {'account_name': 'test2'}}
+DEBUG      2022-05-26 17:03:46,584 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653573826.5676289, 'user': {'account_name': 'test1'}}
+DEBUG      2022-05-26 17:04:04,811 Разбор сообщения от клиента : {'action': 'message', 'from': 'test3', 'to': 'test1', 'time': 1653573844.4280388, 'mess_text': 'some message'}
+INFO       2022-05-26 17:04:04,813 Send message to user test1 from test3.
+INFO       2022-05-26 17:04:08,359 Client ('127.0.0.1', 63614) was disconnected.
+INFO       2022-05-26 17:04:08,859 Client ('127.0.0.1', 63616) was disconnected.
+INFO       2022-05-26 17:04:09,373 Client ('127.0.0.1', 63615) was disconnected.
+INFO       2022-05-28 16:44:46,976 Connected with ('127.0.0.1', 50709)
+DEBUG      2022-05-28 16:44:47,489 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653745486.9763713, 'user': {'account_name': 'Joy'}}
+INFO       2022-05-28 16:44:49,011 Client ('127.0.0.1', 50709) was disconnected.
+INFO       2022-05-28 16:48:02,771 Connected with ('127.0.0.1', 50831)
+DEBUG      2022-05-28 16:48:03,295 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653745682.7715597, 'user': {'account_name': 'Joy'}}
+INFO       2022-05-28 16:48:04,315 Client ('127.0.0.1', 50831) was disconnected.
+INFO       2022-05-28 16:48:54,654 Connected with ('127.0.0.1', 50872)
+DEBUG      2022-05-28 16:48:55,174 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653745734.6544335, 'user': {'account_name': 'joy'}}
+INFO       2022-05-28 16:48:56,690 Client ('127.0.0.1', 50872) was disconnected.
+INFO       2022-05-28 16:50:14,647 Connected with ('127.0.0.1', 50918)
+DEBUG      2022-05-28 16:50:15,163 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653745814.6472926, 'user': {'account_name': 'fd'}}
+INFO       2022-05-28 16:50:16,185 Client ('127.0.0.1', 50918) was disconnected.
+INFO       2022-05-28 16:56:21,323 Connected with ('127.0.0.1', 54676)
+DEBUG      2022-05-28 16:56:21,848 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653746181.3232925, 'user': {'account_name': 'Joy'}}
+INFO       2022-05-28 16:56:22,874 Client ('127.0.0.1', 54676) was disconnected.
+INFO       2022-05-28 17:02:45,826 Connected with ('127.0.0.1', 54883)
+DEBUG      2022-05-28 17:02:46,342 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653746565.8263054, 'user': {'account_name': 'jgfd'}}
+INFO       2022-05-28 17:02:47,855 Client ('127.0.0.1', 54883) was disconnected.
+INFO       2022-05-28 17:03:09,707 Connected with ('127.0.0.1', 54908)
+INFO       2022-05-28 17:03:09,707 Connected with ('127.0.0.1', 54907)
+INFO       2022-05-28 17:03:10,185 Connected with ('127.0.0.1', 54906)
+DEBUG      2022-05-28 17:03:10,198 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653746589.7075155, 'user': {'account_name': 'test2'}}
+DEBUG      2022-05-28 17:03:10,202 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653746589.7075155, 'user': {'account_name': 'test3'}}
+DEBUG      2022-05-28 17:03:10,717 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653746590.185642, 'user': {'account_name': 'test1'}}
+INFO       2022-05-28 17:03:11,223 Client ('127.0.0.1', 54908) was disconnected.
+INFO       2022-05-28 17:03:11,223 Client ('127.0.0.1', 54907) was disconnected.
+INFO       2022-05-28 17:03:12,241 Client ('127.0.0.1', 54906) was disconnected.
+INFO       2022-05-28 17:03:45,816 Connected with ('127.0.0.1', 54923)
+DEBUG      2022-05-28 17:03:46,335 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653746625.8169773, 'user': {'account_name': 'fgdgd'}}
+INFO       2022-05-28 17:03:47,359 Client ('127.0.0.1', 54923) was disconnected.
+INFO       2022-05-28 17:06:57,142 Connected with ('127.0.0.1', 55085)
+DEBUG      2022-05-28 17:06:57,659 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653746817.142191, 'user': {'account_name': 'fh\\'}}
+INFO       2022-05-28 17:08:09,264 Connected with ('127.0.0.1', 55135)
+DEBUG      2022-05-28 17:08:09,783 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653746889.2641702, 'user': {'account_name': 'joy'}}
+DEBUG      2022-05-28 17:08:15,352 Разбор сообщения от клиента : {'action': 'message', 'from': 'joy', 'to': 'Joy', 'time': 1653746895.2647016, 'mess_text': 'hi'}
+ERROR      2022-05-28 17:08:15,353 User Joy not registered, cant send message to wrong user.
+DEBUG      2022-05-28 17:08:24,965 Разбор сообщения от клиента : {'action': 'message', 'from': 'joy', 'to': 'joy', 'time': 1653746904.5174088, 'mess_text': 'hi'}
+INFO       2022-05-28 17:08:24,967 Send message to user joy from joy.
+INFO       2022-05-28 17:25:39,755 Connected with ('127.0.0.1', 55709)
+DEBUG      2022-05-28 17:25:40,286 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653747939.755302, 'user': {'account_name': 'Joy'}}
+DEBUG      2022-05-28 17:25:46,910 Разбор сообщения от клиента : {'action': 'message', 'from': 'Joy', 'to': 'Joy', 'time': 1653747946.548675, 'mess_text': 'jhgfj'}
+INFO       2022-05-28 17:25:46,914 Send message to user Joy from Joy.
+INFO       2022-05-28 17:25:57,989 Connected with ('127.0.0.1', 55731)
+INFO       2022-05-28 17:25:57,991 Connected with ('127.0.0.1', 55732)
+INFO       2022-05-28 17:25:57,994 Connected with ('127.0.0.1', 55733)
+DEBUG      2022-05-28 17:25:58,510 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653747957.9893062, 'user': {'account_name': 'test2'}}
+DEBUG      2022-05-28 17:25:58,513 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653747957.991293, 'user': {'account_name': 'test3'}}
+DEBUG      2022-05-28 17:25:58,516 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653747957.9942849, 'user': {'account_name': 'test4'}}
+INFO       2022-05-28 17:25:58,518 Connected with ('127.0.0.1', 55730)
+DEBUG      2022-05-28 17:25:58,519 Разбор сообщения от клиента : {'action': 'presence', 'time': 1653747958.4975731, 'user': {'account_name': 'test1'}}
+DEBUG      2022-05-28 17:26:06,630 Разбор сообщения от клиента : {'action': 'message', 'from': 'test4', 'to': 'test2', 'time': 1653747966.619, 'mess_text': 'fsdfs'}
+INFO       2022-05-28 17:26:06,631 Send message to user test2 from test4.
+INFO       2022-05-28 17:26:09,702 Client ('127.0.0.1', 55731) was disconnected.
+INFO       2022-05-28 17:26:10,731 Client ('127.0.0.1', 55733) was disconnected.
+INFO       2022-05-28 17:26:11,233 Client ('127.0.0.1', 55730) was disconnected.
+DEBUG      2022-05-28 17:26:15,285 Разбор сообщения от клиента : {'action': 'exit', 'time': 1653747974.9724348, 'account_name': 'test3'}
+INFO       2022-05-28 17:26:15,285 Client ('127.0.0.1', 55732) was disconnected.
+INFO       2022-06-02 12:41:49,826 Connected with ('127.0.0.1', 57402)
+DEBUG      2022-06-02 12:41:50,356 Разбор сообщения от клиента : {'action': 'presence', 'time': 1654162909.82644, 'user': {'account_name': 'Joy'}}
+INFO       2022-06-02 12:41:50,384 Client ('127.0.0.1', 57402) was disconnected.
+INFO       2022-06-02 12:42:31,646 Connected with ('127.0.0.1', 57443)
+DEBUG      2022-06-02 12:42:32,162 Разбор сообщения от клиента : {'action': 'presence', 'time': 1654162951.646812, 'user': {'account_name': 'Jooo'}}
+INFO       2022-06-02 12:42:32,162 Client ('127.0.0.1', 57443) was disconnected.
+INFO       2022-06-02 12:45:23,978 Connected with ('127.0.0.1', 57573)
+DEBUG      2022-06-02 12:45:24,487 Разбор сообщения от клиента : {'action': 'presence', 'time': 1654163123.978036, 'user': {'account_name': 'joy'}}
+INFO       2022-06-02 12:45:24,488 Client ('127.0.0.1', 57573) was disconnected.
+INFO       2022-06-02 12:46:34,448 Connected with ('127.0.0.1', 57620)
+DEBUG      2022-06-02 12:46:34,960 Разбор сообщения от клиента : {'action': 'presence', 'time': 1654163194.4483752, 'user': {'account_name': 'Onlyjoy'}}
+INFO       2022-06-02 12:46:34,960 Client ('127.0.0.1', 57620) was disconnected.
+INFO       2022-06-02 12:47:45,917 Connected with ('127.0.0.1', 57660)
+DEBUG      2022-06-02 12:47:46,424 Разбор сообщения от клиента : {'action': 'presence', 'time': 1654163265.9172602, 'user': {'account_name': 'fgg'}}
+INFO       2022-06-02 12:47:46,425 Client ('127.0.0.1', 57660) was disconnected.
+INFO       2022-06-02 13:00:14,174 Connected with ('127.0.0.1', 58189)
+DEBUG      2022-06-02 13:00:14,688 Разбор сообщения от клиента : {'action': 'presence', 'time': 1654164014.174762, 'user': {'account_name': 'Joy'}}
+INFO       2022-06-02 13:00:35,899 Connected with ('127.0.0.1', 58208)
+DEBUG      2022-06-02 13:00:36,405 Разбор сообщения от клиента : {'action': 'presence', 'time': 1654164035.8999126, 'user': {'account_name': 'Joy'}}
+INFO       2022-06-02 13:01:03,760 Connected with ('127.0.0.1', 58223)
+DEBUG      2022-06-02 13:01:04,268 Разбор сообщения от клиента : {'action': 'presence', 'time': 1654164063.7607243, 'user': {'account_name': 'Joy'}}
+INFO       2022-06-02 13:02:28,053 Connected with ('127.0.0.1', 58276)
+DEBUG      2022-06-02 13:02:28,054 Разбор сообщения от клиента : {'action': 'presence', 'time': 1654164148.0522509, 'user': {'account_name': 'Joy'}}
+INFO       2022-06-02 13:02:51,505 Connected with ('127.0.0.1', 58304)
+DEBUG      2022-06-02 13:02:52,013 Разбор сообщения от клиента : {'action': 'presence', 'time': 1654164171.50501, 'user': {'account_name': 'Mamba'}}
+INFO       2022-06-02 13:02:52,013 Client ('127.0.0.1', 58304) was disconnected.
+INFO       2022-06-02 13:03:27,173 Connected with ('127.0.0.1', 58322)
+DEBUG      2022-06-02 13:03:27,677 Разбор сообщения от клиента : {'action': 'presence', 'time': 1654164207.1731205, 'user': {'account_name': 'Superr'}}
+INFO       2022-06-02 13:03:27,677 Client ('127.0.0.1', 58322) was disconnected.
+INFO       2022-06-02 13:03:41,319 Connected with ('127.0.0.1', 58332)
+DEBUG      2022-06-02 13:03:41,827 Разбор сообщения от клиента : {'action': 'presence', 'time': 1654164221.3197858, 'user': {'account_name': 'Joy'}}
+INFO       2022-06-02 13:04:16,511 Connected with ('127.0.0.1', 58372)
+DEBUG      2022-06-02 13:04:17,017 Разбор сообщения от клиента : {'action': 'presence', 'time': 1654164256.511589, 'user': {'account_name': 'Joy'}}
+INFO       2022-06-04 18:53:07,226 Connected with ('127.0.0.1', 58987)
+DEBUG      2022-06-04 18:53:07,736 Разбор сообщения от клиента : {'action': 'presence', 'time': 1654357987.2266843, 'user': {'account_name': 'Joahn'}}
+DEBUG      2022-06-04 18:53:08,259 Разбор сообщения от клиента : {'action': 'get_users', 'time': 1654357987.7954412, 'account_name': 'Joahn'}
+DEBUG      2022-06-04 18:53:08,767 Разбор сообщения от клиента : {'action': 'get_contacts', 'time': 1654357988.2783043, 'user': 'Joahn'}
+INFO       2022-06-04 18:53:09,274 Client ('127.0.0.1', 58987) was disconnected.
+INFO       2022-06-04 18:54:52,171 Connected with ('127.0.0.1', 59083)
+DEBUG      2022-06-04 18:54:52,675 Разбор сообщения от клиента : {'action': 'presence', 'time': 1654358092.1865025, 'user': {'account_name': 'Gfdg'}}
+DEBUG      2022-06-04 18:54:53,221 Разбор сообщения от клиента : {'action': 'get_users', 'time': 1654358092.7361445, 'account_name': 'Gfdg'}
+DEBUG      2022-06-04 18:54:53,730 Разбор сообщения от клиента : {'action': 'get_contacts', 'time': 1654358093.2358837, 'user': 'Gfdg'}
+INFO       2022-06-04 18:54:54,242 Client ('127.0.0.1', 59083) was disconnected.
+INFO       2022-06-04 18:58:59,880 Connected with ('127.0.0.1', 59298)
+DEBUG      2022-06-04 18:59:00,395 Разбор сообщения от клиента : {'action': 'presence', 'time': 1654358339.8802817, 'user': {'account_name': 'SomeUser'}}
+DEBUG      2022-06-04 18:59:00,920 Разбор сообщения от клиента : {'action': 'get_users', 'time': 1654358340.4502068, 'account_name': 'SomeUser'}
+DEBUG      2022-06-04 18:59:01,446 Разбор сообщения от клиента : {'action': 'get_contacts', 'time': 1654358340.9421043, 'user': 'SomeUser'}
+INFO       2022-06-04 19:01:16,208 Connected with ('127.0.0.1', 59415)
+DEBUG      2022-06-04 19:01:16,721 Разбор сообщения от клиента : {'action': 'presence', 'time': 1654358476.208662, 'user': {'account_name': 'Joy'}}
+DEBUG      2022-06-04 19:01:17,248 Разбор сообщения от клиента : {'action': 'get_users', 'time': 1654358476.7771404, 'account_name': 'Joy'}
+DEBUG      2022-06-04 19:01:17,763 Разбор сообщения от клиента : {'action': 'get_contacts', 'time': 1654358477.2683413, 'user': 'Joy'}
+INFO       2022-06-04 19:01:22,616 Connected with ('127.0.0.1', 59419)
+DEBUG      2022-06-04 19:01:23,122 Разбор сообщения от клиента : {'action': 'presence', 'time': 1654358482.616124, 'user': {'account_name': 'SomeUser1'}}
+DEBUG      2022-06-04 19:01:23,652 Разбор сообщения от клиента : {'action': 'get_users', 'time': 1654358483.1695695, 'account_name': 'SomeUser1'}
+DEBUG      2022-06-04 19:01:24,163 Разбор сообщения от клиента : {'action': 'get_contacts', 'time': 1654358483.6681657, 'user': 'SomeUser1'}
+DEBUG      2022-06-04 19:01:33,265 Разбор сообщения от клиента : {'action': 'message', 'from': 'SomeUser1', 'to': 'Joy', 'time': 1654358493.0000532, 'mess_text': 'Hi!'}
+INFO       2022-06-04 19:01:33,268 Send message to user Joy from SomeUser1.
+INFO       2022-06-04 19:10:30,970 Connected with ('127.0.0.1', 59758)
+INFO       2022-06-04 19:10:42,120 Connected with ('127.0.0.1', 59776)
+INFO       2022-06-04 19:10:55,888 Send message to user Ahmed from Anna.
