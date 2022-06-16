@@ -214,3 +214,8 @@ INFO       2022-06-09 11:50:49,522 Connected with ('127.0.0.1', 51076)
 INFO       2022-06-09 11:51:21,062 Send message to user Anna from Joy.
 INFO       2022-06-09 11:51:31,200 Send message to user Joy from Anna.
 INFO       2022-06-09 11:51:38,839 Send message to user Anna from Joy.
+INFO       2022-06-11 22:02:48,710 Connected with ('127.0.0.1', 56528)
+INFO       2022-06-11 22:02:54,620 Connected with ('127.0.0.1', 56529)
+INFO       2022-06-11 22:03:16,502 Send message to user Anna from Joy.
+INFO       2022-06-11 22:03:19,553 Send message to user Joy from Anna.
+INFO       2022-06-11 22:03:23,633 Send message to user Anna from Joy.

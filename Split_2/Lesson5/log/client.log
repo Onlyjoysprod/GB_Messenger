@@ -5359,3 +5359,240 @@ DEBUG      2022-06-09 11:51:52,778 Function send_message((<socket.socket fd=1348
 DEBUG      2022-06-09 11:51:52,779 Транспорт завершает работу.
 DEBUG      2022-06-09 11:51:53,376 Function main was called from <module>
 DEBUG      2022-06-09 11:51:53,376 Function main((), {}), return None
+DEBUG      2022-06-11 22:02:02,920 Function arg_parser was called from main
+DEBUG      2022-06-11 22:02:02,920 Function arg_parser((), {}), return ('', 7777)
+DEBUG      2022-06-11 22:02:05,058 Function arg_parser was called from <module>
+DEBUG      2022-06-11 22:02:05,058 Function arg_parser((), {}), return ('127.0.0.1', 7777, None)
+DEBUG      2022-06-11 22:02:15,975 Function arg_parser was called from <module>
+DEBUG      2022-06-11 22:02:15,975 Function arg_parser((), {}), return ('127.0.0.1', 7777, None)
+INFO       2022-06-11 22:02:18,116 Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Joy
+INFO       2022-06-11 22:02:18,136 Попытка подключения №1
+DEBUG      2022-06-11 22:02:18,136 Установлено соединение с сервером
+DEBUG      2022-06-11 22:02:18,136 Сформировано presence сообщение для пользователя Joy
+DEBUG      2022-06-11 22:02:18,138 Function encode_to_bytes was called from send_message
+DEBUG      2022-06-11 22:02:18,138 Function encode_to_bytes(({'action': 'presence', 'time': 1654974138.1368325, 'user': {'account_name': 'Joy'}},), {}), return b'{"action": "presence", "time": 1654974138.1368325, "user": {"account_name": "Joy"}}'
+DEBUG      2022-06-11 22:02:18,138 Function send_message was called from connection_init
+DEBUG      2022-06-11 22:02:18,138 Function send_message((<socket.socket fd=1332, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56498), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1654974138.1368325, 'user': {'account_name': 'Joy'}}), {}), return None
+DEBUG      2022-06-11 22:02:18,645 Function decode_to_dict was called from get_message
+DEBUG      2022-06-11 22:02:18,645 Function decode_to_dict((b'{"response": 511, "bin": "0b8a44a69b2f57aa6c1f26336f0e4f233f786552f981c5e44f981b12e56aa9b291c0e4fc4d96f94bf548a7a7ba38b017faddd2160f747aa7e82a5595fc1a0efc"}',), {}), return {'response': 511, 'bin': '0b8a44a69b2f57aa6c1f26336f0e4f233f786552f981c5e44f981b12e56aa9b291c0e4fc4d96f94bf548a7a7ba38b017faddd2160f747aa7e82a5595fc1a0efc'}
+DEBUG      2022-06-11 22:02:18,645 Function get_message was called from connection_init
+DEBUG      2022-06-11 22:02:18,645 Function get_message((<socket.socket fd=1332, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56498), raddr=('127.0.0.1', 7777)>,), {}), return {'response': 511, 'bin': '0b8a44a69b2f57aa6c1f26336f0e4f233f786552f981c5e44f981b12e56aa9b291c0e4fc4d96f94bf548a7a7ba38b017faddd2160f747aa7e82a5595fc1a0efc'}
+DEBUG      2022-06-11 22:02:18,645 Разбор сообщения от сервера: {'response': 511, 'bin': '0b8a44a69b2f57aa6c1f26336f0e4f233f786552f981c5e44f981b12e56aa9b291c0e4fc4d96f94bf548a7a7ba38b017faddd2160f747aa7e82a5595fc1a0efc'}
+DEBUG      2022-06-11 22:02:18,645 Принят неизвестный код подтверждения 511
+INFO       2022-06-11 22:02:18,645 Соединение с сервером успешно установлено.
+DEBUG      2022-06-11 22:02:18,645 Запрос списка известных пользователей Joy
+DEBUG      2022-06-11 22:02:18,646 Function encode_to_bytes was called from send_message
+DEBUG      2022-06-11 22:02:18,646 Function encode_to_bytes(({'action': 'get_users', 'time': 1654974138.6452029, 'account_name': 'Joy'},), {}), return b'{"action": "get_users", "time": 1654974138.6452029, "account_name": "Joy"}'
+DEBUG      2022-06-11 22:02:18,646 Function send_message was called from user_list_update
+DEBUG      2022-06-11 22:02:18,646 Function send_message((<socket.socket fd=1332, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56498), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1654974138.6452029, 'account_name': 'Joy'}), {}), return None
+INFO       2022-06-11 22:02:21,649 Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Anna
+INFO       2022-06-11 22:02:21,669 Попытка подключения №1
+DEBUG      2022-06-11 22:02:21,669 Установлено соединение с сервером
+DEBUG      2022-06-11 22:02:21,669 Сформировано presence сообщение для пользователя Anna
+DEBUG      2022-06-11 22:02:21,670 Function encode_to_bytes was called from send_message
+DEBUG      2022-06-11 22:02:21,671 Function encode_to_bytes(({'action': 'presence', 'time': 1654974141.6694758, 'user': {'account_name': 'Anna'}},), {}), return b'{"action": "presence", "time": 1654974141.6694758, "user": {"account_name": "Anna"}}'
+DEBUG      2022-06-11 22:02:21,671 Function send_message was called from connection_init
+DEBUG      2022-06-11 22:02:21,671 Function send_message((<socket.socket fd=728, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56503), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1654974141.6694758, 'user': {'account_name': 'Anna'}}), {}), return None
+ERROR      2022-06-11 22:02:23,647 Timeout соединения при обновлении списков пользователей.
+DEBUG      2022-06-11 22:02:23,648 Запущен процесс - приёмник сообщений с сервера.
+CRITICAL   2022-06-11 22:02:26,677 Потеряно соединение с сервером!
+DEBUG      2022-06-11 22:02:39,855 Потеряно соединение с сервером.
+DEBUG      2022-06-11 22:02:41,317 Function encode_to_bytes was called from send_message
+DEBUG      2022-06-11 22:02:41,317 Function encode_to_bytes(({'action': 'exit', 'time': 1654974161.3167186, 'account_name': 'Joy'},), {}), return b'{"action": "exit", "time": 1654974161.3167186, "account_name": "Joy"}'
+DEBUG      2022-06-11 22:02:41,318 Function send_message was called from transport_shutdown
+DEBUG      2022-06-11 22:02:41,318 Function send_message((<socket.socket fd=1332, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56498), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1654974161.3167186, 'account_name': 'Joy'}), {}), return None
+DEBUG      2022-06-11 22:02:41,318 Транспорт завершает работу.
+DEBUG      2022-06-11 22:02:42,207 Function main was called from <module>
+DEBUG      2022-06-11 22:02:42,208 Function main((), {}), return None
+DEBUG      2022-06-11 22:02:44,547 Function arg_parser was called from main
+DEBUG      2022-06-11 22:02:44,547 Function arg_parser((), {}), return ('', 7777)
+DEBUG      2022-06-11 22:02:46,937 Function arg_parser was called from <module>
+DEBUG      2022-06-11 22:02:46,937 Function arg_parser((), {}), return ('127.0.0.1', 7777, None)
+INFO       2022-06-11 22:02:48,691 Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Joy
+INFO       2022-06-11 22:02:48,710 Попытка подключения №1
+DEBUG      2022-06-11 22:02:48,710 Установлено соединение с сервером
+DEBUG      2022-06-11 22:02:48,710 Сформировано presence сообщение для пользователя Joy
+DEBUG      2022-06-11 22:02:48,711 Function encode_to_bytes was called from send_message
+DEBUG      2022-06-11 22:02:48,711 Function encode_to_bytes(({'action': 'presence', 'time': 1654974168.710343, 'user': {'account_name': 'Joy'}},), {}), return b'{"action": "presence", "time": 1654974168.710343, "user": {"account_name": "Joy"}}'
+DEBUG      2022-06-11 22:02:48,711 Function send_message was called from connection_init
+DEBUG      2022-06-11 22:02:48,712 Function send_message((<socket.socket fd=1336, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56528), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1654974168.710343, 'user': {'account_name': 'Joy'}}), {}), return None
+DEBUG      2022-06-11 22:02:49,225 Function decode_to_dict was called from get_message
+DEBUG      2022-06-11 22:02:49,225 Function decode_to_dict((b'{"action": "presence", "time": 1654974168.710343, "user": {"account_name": "Joy"}}',), {}), return {'action': 'presence', 'time': 1654974168.710343, 'user': {'account_name': 'Joy'}}
+DEBUG      2022-06-11 22:02:49,225 Function get_message was called from run
+DEBUG      2022-06-11 22:02:49,225 Function get_message((<socket.socket fd=1200, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56528)>,), {}), return {'action': 'presence', 'time': 1654974168.710343, 'user': {'account_name': 'Joy'}}
+DEBUG      2022-06-11 22:02:49,237 Function encode_to_bytes was called from send_message
+DEBUG      2022-06-11 22:02:49,237 Function encode_to_bytes(({'response': 200},), {}), return b'{"response": 200}'
+DEBUG      2022-06-11 22:02:49,238 Function send_message was called from process_client_message
+DEBUG      2022-06-11 22:02:49,238 Function send_message((<socket.socket fd=1200, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56528)>, {'response': 200}), {}), return None
+DEBUG      2022-06-11 22:02:49,238 Function decode_to_dict was called from get_message
+DEBUG      2022-06-11 22:02:49,238 Function decode_to_dict((b'{"response": 200}',), {}), return {'response': 200}
+DEBUG      2022-06-11 22:02:49,239 Function get_message was called from connection_init
+DEBUG      2022-06-11 22:02:49,239 Function get_message((<socket.socket fd=1336, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56528), raddr=('127.0.0.1', 7777)>,), {}), return {'response': 200}
+DEBUG      2022-06-11 22:02:49,239 Разбор сообщения от сервера: {'response': 200}
+INFO       2022-06-11 22:02:49,239 Соединение с сервером успешно установлено.
+DEBUG      2022-06-11 22:02:49,239 Запрос списка известных пользователей Joy
+DEBUG      2022-06-11 22:02:49,239 Function encode_to_bytes was called from send_message
+DEBUG      2022-06-11 22:02:49,239 Function encode_to_bytes(({'action': 'get_users', 'time': 1654974169.239416, 'account_name': 'Joy'},), {}), return b'{"action": "get_users", "time": 1654974169.239416, "account_name": "Joy"}'
+DEBUG      2022-06-11 22:02:49,240 Function send_message was called from user_list_update
+DEBUG      2022-06-11 22:02:49,240 Function send_message((<socket.socket fd=1336, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56528), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1654974169.239416, 'account_name': 'Joy'}), {}), return None
+DEBUG      2022-06-11 22:02:49,753 Function decode_to_dict was called from get_message
+DEBUG      2022-06-11 22:02:49,753 Function decode_to_dict((b'{"action": "get_users", "time": 1654974169.239416, "account_name": "Joy"}',), {}), return {'action': 'get_users', 'time': 1654974169.239416, 'account_name': 'Joy'}
+DEBUG      2022-06-11 22:02:49,754 Function get_message was called from run
+DEBUG      2022-06-11 22:02:49,754 Function get_message((<socket.socket fd=1200, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56528)>,), {}), return {'action': 'get_users', 'time': 1654974169.239416, 'account_name': 'Joy'}
+DEBUG      2022-06-11 22:02:49,759 Function encode_to_bytes was called from send_message
+DEBUG      2022-06-11 22:02:49,759 Function encode_to_bytes(({'response': 202, 'data_list': ['client_1', 'client_2', 'Joahn', 'Gfdg', 'SomeUser', 'Joy', 'SomeUser1', 'Ahmed', 'Anna', 'new_user', 'Onlyjoy']},), {}), return b'{"response": 202, "data_list": ["client_1", "client_2", "Joahn", "Gfdg", "SomeUser", "Joy", "SomeUser1", "Ahmed", "Anna", "new_user", "Onlyjoy"]}'
+DEBUG      2022-06-11 22:02:49,760 Function decode_to_dict was called from get_message
+DEBUG      2022-06-11 22:02:49,760 Function send_message was called from process_client_message
+DEBUG      2022-06-11 22:02:49,760 Function decode_to_dict((b'{"response": 202, "data_list": ["client_1", "client_2", "Joahn", "Gfdg", "SomeUser", "Joy", "SomeUser1", "Ahmed", "Anna", "new_user", "Onlyjoy"]}',), {}), return {'response': 202, 'data_list': ['client_1', 'client_2', 'Joahn', 'Gfdg', 'SomeUser', 'Joy', 'SomeUser1', 'Ahmed', 'Anna', 'new_user', 'Onlyjoy']}
+DEBUG      2022-06-11 22:02:49,760 Function send_message((<socket.socket fd=1200, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56528)>, {'response': 202, 'data_list': ['client_1', 'client_2', 'Joahn', 'Gfdg', 'SomeUser', 'Joy', 'SomeUser1', 'Ahmed', 'Anna', 'new_user', 'Onlyjoy']}), {}), return None
+DEBUG      2022-06-11 22:02:49,760 Function get_message was called from user_list_update
+DEBUG      2022-06-11 22:02:49,760 Function get_message((<socket.socket fd=1336, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56528), raddr=('127.0.0.1', 7777)>,), {}), return {'response': 202, 'data_list': ['client_1', 'client_2', 'Joahn', 'Gfdg', 'SomeUser', 'Joy', 'SomeUser1', 'Ahmed', 'Anna', 'new_user', 'Onlyjoy']}
+DEBUG      2022-06-11 22:02:49,771 Запрос контакт листа для пользователя Thread-1
+DEBUG      2022-06-11 22:02:49,771 Сформирован запрос {'action': 'get_contacts', 'time': 1654974169.7714672, 'user': 'Joy'}
+DEBUG      2022-06-11 22:02:49,772 Function encode_to_bytes was called from send_message
+DEBUG      2022-06-11 22:02:49,772 Function encode_to_bytes(({'action': 'get_contacts', 'time': 1654974169.7714672, 'user': 'Joy'},), {}), return b'{"action": "get_contacts", "time": 1654974169.7714672, "user": "Joy"}'
+DEBUG      2022-06-11 22:02:49,773 Function send_message was called from contacts_list_update
+DEBUG      2022-06-11 22:02:49,773 Function send_message((<socket.socket fd=1336, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56528), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1654974169.7714672, 'user': 'Joy'}), {}), return None
+DEBUG      2022-06-11 22:02:50,268 Function decode_to_dict was called from get_message
+DEBUG      2022-06-11 22:02:50,268 Function decode_to_dict((b'{"action": "get_contacts", "time": 1654974169.7714672, "user": "Joy"}',), {}), return {'action': 'get_contacts', 'time': 1654974169.7714672, 'user': 'Joy'}
+DEBUG      2022-06-11 22:02:50,269 Function get_message was called from run
+DEBUG      2022-06-11 22:02:50,269 Function get_message((<socket.socket fd=1200, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56528)>,), {}), return {'action': 'get_contacts', 'time': 1654974169.7714672, 'user': 'Joy'}
+DEBUG      2022-06-11 22:02:50,272 Function encode_to_bytes was called from send_message
+DEBUG      2022-06-11 22:02:50,272 Function encode_to_bytes(({'response': 202, 'data_list': ['Anna']},), {}), return b'{"response": 202, "data_list": ["Anna"]}'
+DEBUG      2022-06-11 22:02:50,273 Function send_message was called from process_client_message
+DEBUG      2022-06-11 22:02:50,273 Function decode_to_dict((b'{"response": 202, "data_list": ["Anna"]}',), {}), return {'response': 202, 'data_list': ['Anna']}
+DEBUG      2022-06-11 22:02:50,273 Function send_message((<socket.socket fd=1200, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56528)>, {'response': 202, 'data_list': ['Anna']}), {}), return None
+DEBUG      2022-06-11 22:02:50,273 Function get_message was called from contacts_list_update
+DEBUG      2022-06-11 22:02:50,273 Function get_message((<socket.socket fd=1336, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56528), raddr=('127.0.0.1', 7777)>,), {}), return {'response': 202, 'data_list': ['Anna']}
+DEBUG      2022-06-11 22:02:50,273 Получен ответ {'response': 202, 'data_list': ['Anna']}
+DEBUG      2022-06-11 22:02:50,287 Запущен процесс - приёмник сообщений с сервера.
+DEBUG      2022-06-11 22:02:53,089 Function arg_parser was called from <module>
+DEBUG      2022-06-11 22:02:53,090 Function arg_parser((), {}), return ('127.0.0.1', 7777, None)
+INFO       2022-06-11 22:02:54,600 Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: Anna
+INFO       2022-06-11 22:02:54,619 Попытка подключения №1
+DEBUG      2022-06-11 22:02:54,620 Установлено соединение с сервером
+DEBUG      2022-06-11 22:02:54,620 Сформировано presence сообщение для пользователя Anna
+DEBUG      2022-06-11 22:02:54,621 Function encode_to_bytes was called from send_message
+DEBUG      2022-06-11 22:02:54,621 Function encode_to_bytes(({'action': 'presence', 'time': 1654974174.6209242, 'user': {'account_name': 'Anna'}},), {}), return b'{"action": "presence", "time": 1654974174.6209242, "user": {"account_name": "Anna"}}'
+DEBUG      2022-06-11 22:02:54,622 Function send_message was called from connection_init
+DEBUG      2022-06-11 22:02:54,622 Function send_message((<socket.socket fd=1264, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56529), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1654974174.6209242, 'user': {'account_name': 'Anna'}}), {}), return None
+DEBUG      2022-06-11 22:02:55,125 Function decode_to_dict was called from get_message
+DEBUG      2022-06-11 22:02:55,125 Function decode_to_dict((b'{"action": "presence", "time": 1654974174.6209242, "user": {"account_name": "Anna"}}',), {}), return {'action': 'presence', 'time': 1654974174.6209242, 'user': {'account_name': 'Anna'}}
+DEBUG      2022-06-11 22:02:55,125 Function get_message was called from run
+DEBUG      2022-06-11 22:02:55,125 Function get_message((<socket.socket fd=1216, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56529)>,), {}), return {'action': 'presence', 'time': 1654974174.6209242, 'user': {'account_name': 'Anna'}}
+DEBUG      2022-06-11 22:02:55,136 Function encode_to_bytes was called from send_message
+DEBUG      2022-06-11 22:02:55,136 Function encode_to_bytes(({'response': 200},), {}), return b'{"response": 200}'
+DEBUG      2022-06-11 22:02:55,136 Function send_message was called from process_client_message
+DEBUG      2022-06-11 22:02:55,137 Function send_message((<socket.socket fd=1216, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56529)>, {'response': 200}), {}), return None
+DEBUG      2022-06-11 22:02:55,137 Function decode_to_dict was called from get_message
+DEBUG      2022-06-11 22:02:55,137 Function decode_to_dict((b'{"response": 200}',), {}), return {'response': 200}
+DEBUG      2022-06-11 22:02:55,137 Function get_message was called from connection_init
+DEBUG      2022-06-11 22:02:55,137 Function get_message((<socket.socket fd=1264, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56529), raddr=('127.0.0.1', 7777)>,), {}), return {'response': 200}
+DEBUG      2022-06-11 22:02:55,137 Разбор сообщения от сервера: {'response': 200}
+INFO       2022-06-11 22:02:55,137 Соединение с сервером успешно установлено.
+DEBUG      2022-06-11 22:02:55,137 Запрос списка известных пользователей Anna
+DEBUG      2022-06-11 22:02:55,138 Function encode_to_bytes was called from send_message
+DEBUG      2022-06-11 22:02:55,138 Function encode_to_bytes(({'action': 'get_users', 'time': 1654974175.1371136, 'account_name': 'Anna'},), {}), return b'{"action": "get_users", "time": 1654974175.1371136, "account_name": "Anna"}'
+DEBUG      2022-06-11 22:02:55,138 Function send_message was called from user_list_update
+DEBUG      2022-06-11 22:02:55,138 Function send_message((<socket.socket fd=1264, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56529), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1654974175.1371136, 'account_name': 'Anna'}), {}), return None
+DEBUG      2022-06-11 22:02:55,652 Function decode_to_dict was called from get_message
+DEBUG      2022-06-11 22:02:55,652 Function decode_to_dict((b'{"action": "get_users", "time": 1654974175.1371136, "account_name": "Anna"}',), {}), return {'action': 'get_users', 'time': 1654974175.1371136, 'account_name': 'Anna'}
+DEBUG      2022-06-11 22:02:55,653 Function get_message was called from run
+DEBUG      2022-06-11 22:02:55,653 Function get_message((<socket.socket fd=1216, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56529)>,), {}), return {'action': 'get_users', 'time': 1654974175.1371136, 'account_name': 'Anna'}
+DEBUG      2022-06-11 22:02:55,659 Function encode_to_bytes was called from send_message
+DEBUG      2022-06-11 22:02:55,659 Function encode_to_bytes(({'response': 202, 'data_list': ['client_1', 'client_2', 'Joahn', 'Gfdg', 'SomeUser', 'Joy', 'SomeUser1', 'Ahmed', 'Anna', 'new_user', 'Onlyjoy']},), {}), return b'{"response": 202, "data_list": ["client_1", "client_2", "Joahn", "Gfdg", "SomeUser", "Joy", "SomeUser1", "Ahmed", "Anna", "new_user", "Onlyjoy"]}'
+DEBUG      2022-06-11 22:02:55,660 Function decode_to_dict was called from get_message
+DEBUG      2022-06-11 22:02:55,660 Function decode_to_dict((b'{"response": 202, "data_list": ["client_1", "client_2", "Joahn", "Gfdg", "SomeUser", "Joy", "SomeUser1", "Ahmed", "Anna", "new_user", "Onlyjoy"]}',), {}), return {'response': 202, 'data_list': ['client_1', 'client_2', 'Joahn', 'Gfdg', 'SomeUser', 'Joy', 'SomeUser1', 'Ahmed', 'Anna', 'new_user', 'Onlyjoy']}
+DEBUG      2022-06-11 22:02:55,660 Function send_message was called from process_client_message
+DEBUG      2022-06-11 22:02:55,660 Function send_message((<socket.socket fd=1216, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56529)>, {'response': 202, 'data_list': ['client_1', 'client_2', 'Joahn', 'Gfdg', 'SomeUser', 'Joy', 'SomeUser1', 'Ahmed', 'Anna', 'new_user', 'Onlyjoy']}), {}), return None
+DEBUG      2022-06-11 22:02:55,660 Function get_message was called from user_list_update
+DEBUG      2022-06-11 22:02:55,660 Function get_message((<socket.socket fd=1264, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56529), raddr=('127.0.0.1', 7777)>,), {}), return {'response': 202, 'data_list': ['client_1', 'client_2', 'Joahn', 'Gfdg', 'SomeUser', 'Joy', 'SomeUser1', 'Ahmed', 'Anna', 'new_user', 'Onlyjoy']}
+DEBUG      2022-06-11 22:02:55,672 Запрос контакт листа для пользователя Thread-1
+DEBUG      2022-06-11 22:02:55,672 Сформирован запрос {'action': 'get_contacts', 'time': 1654974175.672545, 'user': 'Anna'}
+DEBUG      2022-06-11 22:02:55,673 Function encode_to_bytes was called from send_message
+DEBUG      2022-06-11 22:02:55,673 Function encode_to_bytes(({'action': 'get_contacts', 'time': 1654974175.672545, 'user': 'Anna'},), {}), return b'{"action": "get_contacts", "time": 1654974175.672545, "user": "Anna"}'
+DEBUG      2022-06-11 22:02:55,674 Function send_message was called from contacts_list_update
+DEBUG      2022-06-11 22:02:55,674 Function send_message((<socket.socket fd=1264, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56529), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1654974175.672545, 'user': 'Anna'}), {}), return None
+DEBUG      2022-06-11 22:02:56,166 Function decode_to_dict was called from get_message
+DEBUG      2022-06-11 22:02:56,166 Function decode_to_dict((b'{"action": "get_contacts", "time": 1654974175.672545, "user": "Anna"}',), {}), return {'action': 'get_contacts', 'time': 1654974175.672545, 'user': 'Anna'}
+DEBUG      2022-06-11 22:02:56,167 Function get_message was called from run
+DEBUG      2022-06-11 22:02:56,167 Function get_message((<socket.socket fd=1216, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56529)>,), {}), return {'action': 'get_contacts', 'time': 1654974175.672545, 'user': 'Anna'}
+DEBUG      2022-06-11 22:02:56,169 Function encode_to_bytes was called from send_message
+DEBUG      2022-06-11 22:02:56,169 Function encode_to_bytes(({'response': 202, 'data_list': ['Joy']},), {}), return b'{"response": 202, "data_list": ["Joy"]}'
+DEBUG      2022-06-11 22:02:56,170 Function decode_to_dict was called from get_message
+DEBUG      2022-06-11 22:02:56,170 Function decode_to_dict((b'{"response": 202, "data_list": ["Joy"]}',), {}), return {'response': 202, 'data_list': ['Joy']}
+DEBUG      2022-06-11 22:02:56,170 Function send_message was called from process_client_message
+DEBUG      2022-06-11 22:02:56,170 Function get_message was called from contacts_list_update
+DEBUG      2022-06-11 22:02:56,170 Function send_message((<socket.socket fd=1216, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56529)>, {'response': 202, 'data_list': ['Joy']}), {}), return None
+DEBUG      2022-06-11 22:02:56,170 Получен ответ {'response': 202, 'data_list': ['Joy']}
+DEBUG      2022-06-11 22:02:56,180 Запущен процесс - приёмник сообщений с сервера.
+DEBUG      2022-06-11 22:03:16,357 Сформирован словарь сообщения: {'action': 'message', 'from': 'Joy', 'to': 'Anna', 'time': 1654974196.3577435, 'mess_text': '534'}
+DEBUG      2022-06-11 22:03:16,357 Function encode_to_bytes was called from send_message
+DEBUG      2022-06-11 22:03:16,358 Function encode_to_bytes(({'action': 'message', 'from': 'Joy', 'to': 'Anna', 'time': 1654974196.3577435, 'mess_text': '534'},), {}), return b'{"action": "message", "from": "Joy", "to": "Anna", "time": 1654974196.3577435, "mess_text": "534"}'
+DEBUG      2022-06-11 22:03:16,358 Function send_message was called from send_message
+DEBUG      2022-06-11 22:03:16,358 Function send_message((<socket.socket fd=1336, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56528), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'Joy', 'to': 'Anna', 'time': 1654974196.3577435, 'mess_text': '534'}), {}), return None
+DEBUG      2022-06-11 22:03:16,491 Function decode_to_dict was called from get_message
+DEBUG      2022-06-11 22:03:16,491 Function decode_to_dict((b'{"action": "message", "from": "Joy", "to": "Anna", "time": 1654974196.3577435, "mess_text": "534"}',), {}), return {'action': 'message', 'from': 'Joy', 'to': 'Anna', 'time': 1654974196.3577435, 'mess_text': '534'}
+DEBUG      2022-06-11 22:03:16,491 Function get_message was called from run
+DEBUG      2022-06-11 22:03:16,491 Function get_message((<socket.socket fd=1200, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56528)>,), {}), return {'action': 'message', 'from': 'Joy', 'to': 'Anna', 'time': 1654974196.3577435, 'mess_text': '534'}
+DEBUG      2022-06-11 22:03:16,501 Function encode_to_bytes was called from send_message
+DEBUG      2022-06-11 22:03:16,502 Function encode_to_bytes(({'action': 'message', 'from': 'Joy', 'to': 'Anna', 'time': 1654974196.3577435, 'mess_text': '534'},), {}), return b'{"action": "message", "from": "Joy", "to": "Anna", "time": 1654974196.3577435, "mess_text": "534"}'
+DEBUG      2022-06-11 22:03:16,502 Function send_message was called from process_message
+DEBUG      2022-06-11 22:03:16,502 Function send_message((<socket.socket fd=1216, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56529)>, {'action': 'message', 'from': 'Joy', 'to': 'Anna', 'time': 1654974196.3577435, 'mess_text': '534'}), {}), return None
+DEBUG      2022-06-11 22:03:16,946 Function decode_to_dict was called from get_message
+DEBUG      2022-06-11 22:03:16,946 Function decode_to_dict((b'{"action": "message", "from": "Joy", "to": "Anna", "time": 1654974196.3577435, "mess_text": "534"}',), {}), return {'action': 'message', 'from': 'Joy', 'to': 'Anna', 'time': 1654974196.3577435, 'mess_text': '534'}
+DEBUG      2022-06-11 22:03:16,947 Function get_message was called from run
+DEBUG      2022-06-11 22:03:16,947 Function get_message((<socket.socket fd=1264, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56529), raddr=('127.0.0.1', 7777)>,), {}), return {'action': 'message', 'from': 'Joy', 'to': 'Anna', 'time': 1654974196.3577435, 'mess_text': '534'}
+DEBUG      2022-06-11 22:03:16,947 Принято сообщение с сервера: {'action': 'message', 'from': 'Joy', 'to': 'Anna', 'time': 1654974196.3577435, 'mess_text': '534'}
+DEBUG      2022-06-11 22:03:16,947 Разбор сообщения от сервера: {'action': 'message', 'from': 'Joy', 'to': 'Anna', 'time': 1654974196.3577435, 'mess_text': '534'}
+DEBUG      2022-06-11 22:03:16,947 Получено сообщение от пользователя Joy:534
+DEBUG      2022-06-11 22:03:19,179 Сформирован словарь сообщения: {'action': 'message', 'from': 'Anna', 'to': 'Joy', 'time': 1654974199.1799881, 'mess_text': '43534534'}
+DEBUG      2022-06-11 22:03:19,181 Function encode_to_bytes was called from send_message
+DEBUG      2022-06-11 22:03:19,181 Function encode_to_bytes(({'action': 'message', 'from': 'Anna', 'to': 'Joy', 'time': 1654974199.1799881, 'mess_text': '43534534'},), {}), return b'{"action": "message", "from": "Anna", "to": "Joy", "time": 1654974199.1799881, "mess_text": "43534534"}'
+DEBUG      2022-06-11 22:03:19,181 Function send_message was called from send_message
+DEBUG      2022-06-11 22:03:19,182 Function send_message((<socket.socket fd=1264, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56529), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'Anna', 'to': 'Joy', 'time': 1654974199.1799881, 'mess_text': '43534534'}), {}), return None
+DEBUG      2022-06-11 22:03:19,538 Function decode_to_dict was called from get_message
+DEBUG      2022-06-11 22:03:19,538 Function decode_to_dict((b'{"action": "message", "from": "Anna", "to": "Joy", "time": 1654974199.1799881, "mess_text": "43534534"}',), {}), return {'action': 'message', 'from': 'Anna', 'to': 'Joy', 'time': 1654974199.1799881, 'mess_text': '43534534'}
+DEBUG      2022-06-11 22:03:19,538 Function get_message was called from run
+DEBUG      2022-06-11 22:03:19,538 Function get_message((<socket.socket fd=1216, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56529)>,), {}), return {'action': 'message', 'from': 'Anna', 'to': 'Joy', 'time': 1654974199.1799881, 'mess_text': '43534534'}
+DEBUG      2022-06-11 22:03:19,552 Function encode_to_bytes was called from send_message
+DEBUG      2022-06-11 22:03:19,552 Function encode_to_bytes(({'action': 'message', 'from': 'Anna', 'to': 'Joy', 'time': 1654974199.1799881, 'mess_text': '43534534'},), {}), return b'{"action": "message", "from": "Anna", "to": "Joy", "time": 1654974199.1799881, "mess_text": "43534534"}'
+DEBUG      2022-06-11 22:03:19,553 Function decode_to_dict was called from get_message
+DEBUG      2022-06-11 22:03:19,553 Function send_message was called from process_message
+DEBUG      2022-06-11 22:03:19,553 Function decode_to_dict((b'{"action": "message", "from": "Anna", "to": "Joy", "time": 1654974199.1799881, "mess_text": "43534534"}',), {}), return {'action': 'message', 'from': 'Anna', 'to': 'Joy', 'time': 1654974199.1799881, 'mess_text': '43534534'}
+DEBUG      2022-06-11 22:03:19,553 Function send_message((<socket.socket fd=1200, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56528)>, {'action': 'message', 'from': 'Anna', 'to': 'Joy', 'time': 1654974199.1799881, 'mess_text': '43534534'}), {}), return None
+DEBUG      2022-06-11 22:03:19,553 Function get_message was called from send_message
+DEBUG      2022-06-11 22:03:19,553 Function get_message((<socket.socket fd=1336, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56528), raddr=('127.0.0.1', 7777)>,), {}), return {'action': 'message', 'from': 'Anna', 'to': 'Joy', 'time': 1654974199.1799881, 'mess_text': '43534534'}
+DEBUG      2022-06-11 22:03:19,553 Разбор сообщения от сервера: {'action': 'message', 'from': 'Anna', 'to': 'Joy', 'time': 1654974199.1799881, 'mess_text': '43534534'}
+DEBUG      2022-06-11 22:03:19,553 Получено сообщение от пользователя Anna:43534534
+INFO       2022-06-11 22:03:19,561 Отправлено сообщение для пользователя Anna
+DEBUG      2022-06-11 22:03:23,439 Сформирован словарь сообщения: {'action': 'message', 'from': 'Joy', 'to': 'Anna', 'time': 1654974203.439129, 'mess_text': 'gdfgd'}
+DEBUG      2022-06-11 22:03:23,439 Function encode_to_bytes was called from send_message
+DEBUG      2022-06-11 22:03:23,439 Function encode_to_bytes(({'action': 'message', 'from': 'Joy', 'to': 'Anna', 'time': 1654974203.439129, 'mess_text': 'gdfgd'},), {}), return b'{"action": "message", "from": "Joy", "to": "Anna", "time": 1654974203.439129, "mess_text": "gdfgd"}'
+DEBUG      2022-06-11 22:03:23,439 Function send_message was called from send_message
+DEBUG      2022-06-11 22:03:23,439 Function send_message((<socket.socket fd=1336, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56528), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'Joy', 'to': 'Anna', 'time': 1654974203.439129, 'mess_text': 'gdfgd'}), {}), return None
+DEBUG      2022-06-11 22:03:23,618 Function decode_to_dict was called from get_message
+DEBUG      2022-06-11 22:03:23,618 Function decode_to_dict((b'{"action": "message", "from": "Joy", "to": "Anna", "time": 1654974203.439129, "mess_text": "gdfgd"}',), {}), return {'action': 'message', 'from': 'Joy', 'to': 'Anna', 'time': 1654974203.439129, 'mess_text': 'gdfgd'}
+DEBUG      2022-06-11 22:03:23,618 Function get_message was called from run
+DEBUG      2022-06-11 22:03:23,618 Function get_message((<socket.socket fd=1200, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56528)>,), {}), return {'action': 'message', 'from': 'Joy', 'to': 'Anna', 'time': 1654974203.439129, 'mess_text': 'gdfgd'}
+DEBUG      2022-06-11 22:03:23,632 Function encode_to_bytes was called from send_message
+DEBUG      2022-06-11 22:03:23,632 Function encode_to_bytes(({'action': 'message', 'from': 'Joy', 'to': 'Anna', 'time': 1654974203.439129, 'mess_text': 'gdfgd'},), {}), return b'{"action": "message", "from": "Joy", "to": "Anna", "time": 1654974203.439129, "mess_text": "gdfgd"}'
+DEBUG      2022-06-11 22:03:23,632 Function send_message was called from process_message
+DEBUG      2022-06-11 22:03:23,632 Function decode_to_dict was called from get_message
+DEBUG      2022-06-11 22:03:23,632 Function decode_to_dict((b'{"action": "message", "from": "Joy", "to": "Anna", "time": 1654974203.439129, "mess_text": "gdfgd"}',), {}), return {'action': 'message', 'from': 'Joy', 'to': 'Anna', 'time': 1654974203.439129, 'mess_text': 'gdfgd'}
+DEBUG      2022-06-11 22:03:23,633 Function send_message((<socket.socket fd=1216, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56529)>, {'action': 'message', 'from': 'Joy', 'to': 'Anna', 'time': 1654974203.439129, 'mess_text': 'gdfgd'}), {}), return None
+DEBUG      2022-06-11 22:03:23,633 Function get_message was called from send_message
+DEBUG      2022-06-11 22:03:23,633 Function get_message((<socket.socket fd=1264, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56529), raddr=('127.0.0.1', 7777)>,), {}), return {'action': 'message', 'from': 'Joy', 'to': 'Anna', 'time': 1654974203.439129, 'mess_text': 'gdfgd'}
+DEBUG      2022-06-11 22:03:23,633 Разбор сообщения от сервера: {'action': 'message', 'from': 'Joy', 'to': 'Anna', 'time': 1654974203.439129, 'mess_text': 'gdfgd'}
+DEBUG      2022-06-11 22:03:23,633 Получено сообщение от пользователя Joy:gdfgd
+INFO       2022-06-11 22:03:23,640 Отправлено сообщение для пользователя Joy
+DEBUG      2022-06-11 22:03:28,427 Function main was called from <module>
+DEBUG      2022-06-11 22:03:28,427 Function main((), {}), return None
+CRITICAL   2022-06-11 22:03:28,462 Потеряно соединение с сервером.
+CRITICAL   2022-06-11 22:03:28,462 Потеряно соединение с сервером.
+DEBUG      2022-06-11 22:03:29,527 Function encode_to_bytes was called from send_message
+DEBUG      2022-06-11 22:03:29,527 Function encode_to_bytes(({'action': 'exit', 'time': 1654974209.526788, 'account_name': 'Joy'},), {}), return b'{"action": "exit", "time": 1654974209.526788, "account_name": "Joy"}'
+DEBUG      2022-06-11 22:03:29,527 Транспорт завершает работу.
+DEBUG      2022-06-11 22:03:30,824 Function encode_to_bytes was called from send_message
+DEBUG      2022-06-11 22:03:30,824 Function encode_to_bytes(({'action': 'exit', 'time': 1654974210.8231034, 'account_name': 'Anna'},), {}), return b'{"action": "exit", "time": 1654974210.8231034, "account_name": "Anna"}'
+DEBUG      2022-06-11 22:03:30,824 Транспорт завершает работу.
