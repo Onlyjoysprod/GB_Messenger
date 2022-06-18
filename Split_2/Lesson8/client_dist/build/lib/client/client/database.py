@@ -1,14 +1,20 @@
 import datetime
+import os
 import sys
 
 sys.path.append('../')
 from common.variables import *
 from sqlalchemy import create_engine, Table, Column, Integer, String, Text, MetaData, DateTime
 from sqlalchemy.orm import mapper, sessionmaker
-import os
+from sqlalchemy.sql import default_comparator
 
 
 class ClientDatabase:
+    """
+    Класс - оболочка для работы с базой данных клиента.
+    Использует SQLite базу данных, реализован с помощью
+    SQLAlchemy ORM и используется классический подход.
+    """
     class KnownUsers:
         """
         Класс - отображение для таблицы всех пользователей.
@@ -43,7 +49,7 @@ class ClientDatabase:
         # Поскольку клиент мультипоточный необходимо отключить
         # проверки на подключения с разных потоков,
         # иначе sqlite3.ProgrammingError
-        path = os.path.dirname(os.path.realpath(__file__))
+        path = os.getcwd()
         filename = f'client_{name}.db3'
         self.database_engine = create_engine(
             f'sqlite:///{os.path.join(path, filename)}',
@@ -105,12 +111,10 @@ class ClientDatabase:
     def contacts_clear(self):
         """ Метод, очищающий таблицу со списком контактов. """
         self.session.query(self.Contacts).delete()
-        self.session.commit()
 
     def del_contact(self, contact):
         """ Метод, удаляющий определённый контакт. """
         self.session.query(self.Contacts).filter_by(name=contact).delete()
-        self.session.commit()
 
     def add_users(self, users_list):
         """ Метод, заполняющий таблицу известных пользователей. """
@@ -164,18 +168,18 @@ class ClientDatabase:
 
 
 # отладка
-# if __name__ == '__main__':
-#     test_db = ClientDatabase('test1')
-#     for i in ['test3', 'test4', 'test5']:
-#        test_db.add_contact(i)
-#     test_db.add_contact('test4')
-#     test_db.add_users(['test1', 'test2', 'test3', 'test4', 'test5'])
-#     test_db.save_message('test2', 'in', f'Привет! я тестовое сообщение от {datetime.datetime.now()}!')
-#     test_db.save_message('test2', 'out', f'Привет! я другое тестовое сообщение от {datetime.datetime.now()}!')
-#     print(test_db.get_contacts())
-#     print(test_db.get_users())
-#     print(test_db.check_user('test1'))
-#     print(test_db.check_user('test10'))
-#     print(sorted(test_db.get_history('test2'), key=lambda item: item[3]))
-#     test_db.del_contact('test4')
-#     print(test_db.get_contacts())
+if __name__ == '__main__':
+    test_db = ClientDatabase('test1')
+    # for i in ['test3', 'test4', 'test5']:
+    #    test_db.add_contact(i)
+    # test_db.add_contact('test4')
+    # test_db.add_users(['test1', 'test2', 'test3', 'test4', 'test5'])
+    # test_db.save_message('test2', 'in', f'Привет! я тестовое сообщение от {datetime.datetime.now()}!')
+    # test_db.save_message('test2', 'out', f'Привет! я другое тестовое сообщение от {datetime.datetime.now()}!')
+    # print(test_db.get_contacts())
+    # print(test_db.get_users())
+    # print(test_db.check_user('test1'))
+    # print(test_db.check_user('test10'))
+    print(sorted(test_db.get_history('test2'), key=lambda item: item[3]))
+    # test_db.del_contact('test4')
+    # print(test_db.get_contacts())
